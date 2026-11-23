@@ -1,0 +1,603 @@
+{
+  "version": 1,
+  "disclaimer": "Educational overview only. The overlay is a generic anatomical model aligned with camera-based tracking; it does not show your actual anatomy and is not medical imaging.",
+  "categories": [
+    {
+      "id": "skull",
+      "name": "Skull",
+      "description": "Bones of the cranium and face that protect the brain and support the face."
+    },
+    {
+      "id": "brain",
+      "name": "Brain",
+      "description": "Major divisions of the central nervous system inside the cranial cavity."
+    },
+    {
+      "id": "eyes",
+      "name": "Eye & Orbit",
+      "description": "The eyeball, the muscles that move it, and the optic nerve."
+    },
+    {
+      "id": "muscles",
+      "name": "Muscles",
+      "description": "Muscles of facial expression, mastication and the tongue."
+    },
+    {
+      "id": "hands",
+      "name": "Hand Skeleton",
+      "description": "The 27 bones of the wrist, palm and fingers."
+    },
+    {
+      "id": "body",
+      "name": "Body Skeleton",
+      "description": "The axial skeleton (spine, rib cage, pelvis) and the bones of the arms and legs."
+    }
+  ],
+  "structures": [
+    {
+      "id": "frontal_bone",
+      "name": "Frontal bone",
+      "category": "skull",
+      "description": "The broad bone forming the forehead, the roofs of the eye sockets and the front of the cranial vault.",
+      "function": "Protects the frontal lobes of the brain and shapes the forehead and upper orbits.",
+      "related": [
+        "parietal_bone",
+        "nasal_bone",
+        "sphenoid_bone"
+      ]
+    },
+    {
+      "id": "parietal_bone",
+      "name": "Parietal bones",
+      "category": "skull",
+      "description": "A pair of curved plates forming the sides and roof of the cranium, meeting in the midline at the sagittal suture.",
+      "function": "Enclose and protect the upper and lateral surfaces of the brain.",
+      "related": [
+        "frontal_bone",
+        "occipital_bone",
+        "temporal_bone"
+      ]
+    },
+    {
+      "id": "occipital_bone",
+      "name": "Occipital bone",
+      "category": "skull",
+      "description": "The bone at the back and base of the skull containing the foramen magnum, through which the brainstem joins the spinal cord.",
+      "function": "Protects the back of the brain and articulates with the first cervical vertebra to allow nodding.",
+      "related": [
+        "parietal_bone",
+        "brainstem",
+        "cerebellum"
+      ]
+    },
+    {
+      "id": "temporal_bone",
+      "name": "Temporal bones",
+      "category": "skull",
+      "description": "Paired bones at the sides of the skull that house the middle and inner ear and form part of the jaw joint.",
+      "function": "Protect the hearing and balance organs and provide the socket for the temporomandibular joint.",
+      "related": [
+        "mandible",
+        "zygomatic_bone",
+        "temporalis"
+      ]
+    },
+    {
+      "id": "sphenoid_bone",
+      "name": "Sphenoid bone",
+      "category": "skull",
+      "description": "A butterfly-shaped bone at the centre of the skull base that links the cranial and facial skeleton.",
+      "function": "Forms part of the orbits and skull base and cradles the pituitary gland in the sella turcica.",
+      "related": [
+        "frontal_bone",
+        "temporal_bone",
+        "optic_nerve"
+      ]
+    },
+    {
+      "id": "ethmoid_bone",
+      "name": "Ethmoid bone",
+      "category": "skull",
+      "description": "A light, sponge-like bone between the eye sockets that forms part of the nasal cavity.",
+      "function": "Separates the nasal cavity from the brain and transmits the olfactory nerve fibres.",
+      "related": [
+        "frontal_bone",
+        "vomer",
+        "lacrimal_bone"
+      ]
+    },
+    {
+      "id": "zygomatic_bone",
+      "name": "Zygomatic bones",
+      "category": "skull",
+      "description": "The cheekbones, forming the prominence of the cheek and the outer rim of each eye socket.",
+      "function": "Shape the cheeks, protect the eyes and give origin to the masseter and zygomatic muscles.",
+      "related": [
+        "maxilla",
+        "temporal_bone",
+        "masseter",
+        "zygomaticus_major"
+      ]
+    },
+    {
+      "id": "maxilla",
+      "name": "Maxillae",
+      "category": "skull",
+      "description": "The paired upper jawbones that hold the upper teeth and form the floor of the orbits and much of the hard palate.",
+      "function": "Anchor the upper teeth, support the nose and cheeks and separate the mouth from the nasal cavity.",
+      "related": [
+        "upper_teeth",
+        "palatine_bone",
+        "nasal_bone"
+      ]
+    },
+    {
+      "id": "nasal_bone",
+      "name": "Nasal bones",
+      "category": "skull",
+      "description": "Two small oblong bones forming the bridge of the nose.",
+      "function": "Support the upper part of the nose; the lower nose is shaped by cartilage that is not shown.",
+      "related": [
+        "frontal_bone",
+        "maxilla"
+      ]
+    },
+    {
+      "id": "lacrimal_bone",
+      "name": "Lacrimal bones",
+      "category": "skull",
+      "description": "The smallest bones of the face, located in the inner wall of each orbit.",
+      "function": "Contain the groove for the tear sac that drains tears into the nose.",
+      "related": [
+        "ethmoid_bone",
+        "maxilla"
+      ]
+    },
+    {
+      "id": "palatine_bone",
+      "name": "Palatine bones",
+      "category": "skull",
+      "description": "L-shaped bones at the back of the nasal cavity forming the rear of the hard palate.",
+      "function": "Complete the roof of the mouth and the floor of the nasal cavity.",
+      "related": [
+        "maxilla",
+        "vomer"
+      ]
+    },
+    {
+      "id": "vomer",
+      "name": "Vomer",
+      "category": "skull",
+      "description": "A thin, plough-shaped bone forming the lower back part of the nasal septum.",
+      "function": "Divides the nasal cavity into left and right passages.",
+      "related": [
+        "ethmoid_bone",
+        "palatine_bone"
+      ]
+    },
+    {
+      "id": "inferior_nasal_concha",
+      "name": "Inferior nasal conchae",
+      "category": "skull",
+      "description": "Scroll-shaped bones projecting from the side walls of the nasal cavity.",
+      "function": "Increase the surface area of the nose to warm and humidify inhaled air.",
+      "related": [
+        "maxilla",
+        "ethmoid_bone"
+      ]
+    },
+    {
+      "id": "upper_teeth",
+      "name": "Upper teeth",
+      "category": "skull",
+      "description": "The permanent maxillary teeth: incisors, canines, premolars and molars set in the upper jaw.",
+      "function": "Cut, tear and grind food against the lower teeth and help shape speech sounds.",
+      "related": [
+        "maxilla",
+        "lower_teeth"
+      ]
+    },
+    {
+      "id": "mandible",
+      "name": "Mandible",
+      "category": "skull",
+      "description": "The lower jawbone, which supports the lower teeth and participates in chewing and speech.",
+      "function": "The only movable bone of the skull; it hinges and glides at the temporomandibular joints to open and close the mouth.",
+      "related": [
+        "lower_teeth",
+        "temporal_bone",
+        "masseter",
+        "temporalis"
+      ]
+    },
+    {
+      "id": "lower_teeth",
+      "name": "Lower teeth",
+      "category": "skull",
+      "description": "The permanent mandibular teeth set in the lower jaw.",
+      "function": "Move with the mandible to bite and chew against the upper teeth.",
+      "related": [
+        "mandible",
+        "upper_teeth"
+      ]
+    },
+    {
+      "id": "left_cerebral_hemisphere",
+      "name": "Left cerebral hemisphere",
+      "category": "brain",
+      "description": "The left half of the cerebrum, its folded cortex divided into frontal, parietal, temporal and occipital lobes.",
+      "function": "Controls movement and sensation of the right side of the body and, in most people, language.",
+      "related": [
+        "right_cerebral_hemisphere",
+        "ventricular_system",
+        "brainstem"
+      ]
+    },
+    {
+      "id": "right_cerebral_hemisphere",
+      "name": "Right cerebral hemisphere",
+      "category": "brain",
+      "description": "The right half of the cerebrum, connected to the left hemisphere by the corpus callosum.",
+      "function": "Controls movement and sensation of the left side of the body and contributes strongly to spatial attention.",
+      "related": [
+        "left_cerebral_hemisphere",
+        "ventricular_system",
+        "brainstem"
+      ]
+    },
+    {
+      "id": "cerebellum",
+      "name": "Cerebellum",
+      "category": "brain",
+      "description": "The 'little brain' tucked beneath the occipital lobes at the back of the skull.",
+      "function": "Coordinates movement, balance, posture and the timing of motor skills.",
+      "related": [
+        "brainstem",
+        "occipital_bone"
+      ]
+    },
+    {
+      "id": "brainstem",
+      "name": "Brainstem",
+      "category": "brain",
+      "description": "The midbrain, pons and medulla oblongata connecting the cerebrum and cerebellum to the spinal cord.",
+      "function": "Regulates breathing, heart rate and consciousness and relays signals between brain and body.",
+      "related": [
+        "cerebellum",
+        "occipital_bone",
+        "left_cerebral_hemisphere"
+      ]
+    },
+    {
+      "id": "ventricular_system",
+      "name": "Ventricular system",
+      "category": "brain",
+      "description": "A set of connected fluid-filled cavities deep within the brain.",
+      "function": "Produces and circulates cerebrospinal fluid, which cushions the brain and removes waste.",
+      "related": [
+        "left_cerebral_hemisphere",
+        "right_cerebral_hemisphere",
+        "brainstem"
+      ]
+    },
+    {
+      "id": "eyeball",
+      "name": "Eyeball (sclera)",
+      "category": "eyes",
+      "description": "The tough white outer coat of the eye, about 24 mm across, continuous with the clear cornea at the front.",
+      "function": "Maintains the shape of the eye and provides attachment for the muscles that move it.",
+      "related": [
+        "cornea",
+        "iris",
+        "lens",
+        "extraocular_muscles",
+        "optic_nerve"
+      ]
+    },
+    {
+      "id": "cornea",
+      "name": "Cornea",
+      "category": "eyes",
+      "description": "The transparent dome at the front of the eye.",
+      "function": "Provides most of the eye's focusing power.",
+      "related": [
+        "eyeball",
+        "lens",
+        "iris"
+      ]
+    },
+    {
+      "id": "iris",
+      "name": "Iris",
+      "category": "eyes",
+      "description": "The coloured ring of muscle surrounding the pupil.",
+      "function": "Adjusts pupil size to control how much light enters the eye.",
+      "related": [
+        "cornea",
+        "lens"
+      ]
+    },
+    {
+      "id": "lens",
+      "name": "Lens",
+      "category": "eyes",
+      "description": "A flexible, transparent structure behind the iris.",
+      "function": "Changes shape to fine-tune focus for near and distant objects.",
+      "related": [
+        "iris",
+        "cornea",
+        "eyeball"
+      ]
+    },
+    {
+      "id": "optic_nerve",
+      "name": "Optic nerves",
+      "category": "eyes",
+      "description": "Cables of over a million nerve fibres leaving the back of each eye and passing through the optic canal of the sphenoid bone.",
+      "function": "Carry visual information from the retina to the brain.",
+      "related": [
+        "eyeball",
+        "sphenoid_bone"
+      ]
+    },
+    {
+      "id": "extraocular_muscles",
+      "name": "Extraocular muscles",
+      "category": "eyes",
+      "description": "Six muscles per eye (four rectus and two oblique) plus the eyelid-raising levator palpebrae superioris.",
+      "function": "Rotate the eyes precisely so both point at the same target; the eyeball model rotates with your tracked gaze.",
+      "related": [
+        "eyeball",
+        "sphenoid_bone"
+      ]
+    },
+    {
+      "id": "tongue_muscles",
+      "name": "Extrinsic tongue muscles",
+      "category": "muscles",
+      "description": "The genioglossus and hyoglossus, which anchor the tongue to the mandible and hyoid bone.",
+      "function": "Protrude, retract and depress the tongue during speech and swallowing.",
+      "related": [
+        "mandible",
+        "lower_teeth"
+      ]
+    },
+    {
+      "id": "frontalis",
+      "name": "Frontalis (schematic)",
+      "category": "muscles",
+      "description": "The frontal belly of the occipitofrontalis, a thin vertical sheet beneath the forehead skin.",
+      "function": "Raises the eyebrows and wrinkles the forehead.",
+      "related": [
+        "frontal_bone",
+        "orbicularis_oculi"
+      ]
+    },
+    {
+      "id": "orbicularis_oculi",
+      "name": "Orbicularis oculi (schematic)",
+      "category": "muscles",
+      "description": "A ring of muscle encircling each eye within the eyelids and around the orbit.",
+      "function": "Closes the eyelids for blinking and squinting and helps drain tears.",
+      "related": [
+        "frontalis",
+        "zygomatic_bone",
+        "eyeball"
+      ]
+    },
+    {
+      "id": "zygomaticus_major",
+      "name": "Zygomaticus major (schematic)",
+      "category": "muscles",
+      "description": "A strap-like muscle running from the cheekbone to the corner of the mouth.",
+      "function": "Draws the corner of the mouth up and out — the main smiling muscle.",
+      "related": [
+        "zygomatic_bone",
+        "orbicularis_oris",
+        "buccinator"
+      ]
+    },
+    {
+      "id": "buccinator",
+      "name": "Buccinator (schematic)",
+      "category": "muscles",
+      "description": "A thin, deep muscle forming the wall of the cheek between the upper and lower jaws.",
+      "function": "Presses the cheek against the teeth to keep food between them and helps blow air out.",
+      "related": [
+        "orbicularis_oris",
+        "masseter",
+        "maxilla",
+        "mandible"
+      ]
+    },
+    {
+      "id": "masseter",
+      "name": "Masseter (schematic)",
+      "category": "muscles",
+      "description": "A thick, powerful muscle from the zygomatic arch to the angle of the mandible.",
+      "function": "The prime chewing muscle: elevates the mandible to close the jaw.",
+      "related": [
+        "mandible",
+        "zygomatic_bone",
+        "temporalis"
+      ]
+    },
+    {
+      "id": "orbicularis_oris",
+      "name": "Orbicularis oris (schematic)",
+      "category": "muscles",
+      "description": "The sphincter-like muscle encircling the mouth within the lips.",
+      "function": "Closes and purses the lips for speech, eating and expression.",
+      "related": [
+        "zygomaticus_major",
+        "buccinator"
+      ]
+    },
+    {
+      "id": "temporalis",
+      "name": "Temporalis (schematic)",
+      "category": "muscles",
+      "description": "A fan-shaped muscle covering the side of the skull above the ear, converging on the coronoid process of the mandible.",
+      "function": "Elevates and retracts the mandible to close the jaw.",
+      "related": [
+        "temporal_bone",
+        "parietal_bone",
+        "mandible",
+        "masseter"
+      ]
+    },
+    {
+      "id": "carpal_bones",
+      "name": "Carpal bones",
+      "category": "hands",
+      "description": "Eight small bones in two rows forming the wrist: scaphoid, lunate, triquetrum, pisiform, trapezium, trapezoid, capitate and hamate.",
+      "function": "Allow the wrist to flex, extend and tilt while transmitting forces from the hand to the forearm.",
+      "related": [
+        "metacarpal_bones"
+      ]
+    },
+    {
+      "id": "metacarpal_bones",
+      "name": "Metacarpals",
+      "category": "hands",
+      "description": "Five long bones forming the palm, numbered I (thumb) to V (little finger).",
+      "function": "Form the framework of the palm; their heads are the knuckles.",
+      "related": [
+        "carpal_bones",
+        "phalanges"
+      ]
+    },
+    {
+      "id": "phalanges",
+      "name": "Phalanges",
+      "category": "hands",
+      "description": "The 14 finger bones: proximal, middle and distal phalanges for each finger, and two phalanges for the thumb.",
+      "function": "Their hinge joints let the fingers bend to grip, pinch and manipulate objects.",
+      "related": [
+        "metacarpal_bones"
+      ]
+    },
+    {
+      "id": "rib_cage",
+      "name": "Rib cage",
+      "category": "body",
+      "description": "Twelve pairs of curved ribs joined to the spine at the back and, through costal cartilages, to the sternum at the front.",
+      "function": "Protects the heart and lungs and moves with every breath to expand the chest.",
+      "related": [
+        "sternum",
+        "vertebral_column"
+      ]
+    },
+    {
+      "id": "sternum",
+      "name": "Sternum",
+      "category": "body",
+      "description": "The flat breastbone in the centre of the chest, made of the manubrium, body and xiphoid process.",
+      "function": "Anchors the ribs and clavicles and shields the heart.",
+      "related": [
+        "rib_cage",
+        "clavicle"
+      ]
+    },
+    {
+      "id": "vertebral_column",
+      "name": "Vertebral column",
+      "category": "body",
+      "description": "The spine: 7 cervical, 12 thoracic and 5 lumbar vertebrae resting on the sacrum.",
+      "function": "Supports the head and trunk, allows bending and twisting, and protects the spinal cord.",
+      "related": [
+        "rib_cage",
+        "pelvis",
+        "occipital_bone"
+      ]
+    },
+    {
+      "id": "clavicle",
+      "name": "Clavicles",
+      "category": "body",
+      "description": "The collarbones: S-shaped struts between the sternum and each shoulder blade.",
+      "function": "Hold the shoulders away from the trunk so the arms can swing freely.",
+      "related": [
+        "scapula",
+        "sternum",
+        "humerus"
+      ]
+    },
+    {
+      "id": "scapula",
+      "name": "Scapulae",
+      "category": "body",
+      "description": "Triangular shoulder blades lying against the back of the rib cage.",
+      "function": "Provide the shoulder socket and attachments for the muscles that move the arm.",
+      "related": [
+        "clavicle",
+        "humerus"
+      ]
+    },
+    {
+      "id": "pelvis",
+      "name": "Pelvis (hip bones)",
+      "category": "body",
+      "description": "The paired hip bones, each formed by the fused ilium, ischium and pubis, joined to the sacrum.",
+      "function": "Transfers body weight to the legs, holds the hip sockets and protects pelvic organs.",
+      "related": [
+        "vertebral_column",
+        "femur"
+      ]
+    },
+    {
+      "id": "humerus",
+      "name": "Humerus",
+      "category": "body",
+      "description": "The long bone of the upper arm, from the shoulder to the elbow.",
+      "function": "Lever for shoulder and elbow movements; its head forms the ball of the shoulder joint.",
+      "related": [
+        "scapula",
+        "forearm"
+      ]
+    },
+    {
+      "id": "forearm",
+      "name": "Radius and ulna",
+      "category": "body",
+      "description": "The two parallel bones of the forearm between the elbow and the wrist.",
+      "function": "Let the forearm rotate (palm up / palm down) and transmit forces from the hand.",
+      "related": [
+        "humerus",
+        "carpal_bones"
+      ]
+    },
+    {
+      "id": "femur",
+      "name": "Femur",
+      "category": "body",
+      "description": "The thigh bone: the longest and strongest bone in the body.",
+      "function": "Carries body weight from the hip to the knee and drives walking and running.",
+      "related": [
+        "pelvis",
+        "leg"
+      ]
+    },
+    {
+      "id": "leg",
+      "name": "Tibia, fibula and patella",
+      "category": "body",
+      "description": "The shin bone (tibia), the slender fibula beside it, and the kneecap (patella).",
+      "function": "The tibia bears weight; the patella improves the leverage of the thigh muscles at the knee.",
+      "related": [
+        "femur",
+        "foot"
+      ]
+    },
+    {
+      "id": "foot",
+      "name": "Foot bones",
+      "category": "body",
+      "description": "26 bones: seven tarsals (including the talus and heel bone), five metatarsals and fourteen toe phalanges.",
+      "function": "Form flexible arches that support body weight and absorb impact during walking.",
+      "related": [
+        "leg"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1411 @@
+{
+ "version": 1,
+ "units": "cm",
+ "frame": "mediapipe-canonical-face (+x subject-left, +y up, +z anterior)",
+ "attribution": "BodyParts3D, (c) The Database Center for Life Science licensed under CC Attribution 4.0 International",
+ "fit": {
+  "scale": 1.1170645285996517,
+  "residual_cm": {
+   "eye_r": 0.5047977123734485,
+   "eye_l": 0.5178423536857633,
+   "nasion": 0.895201678560013,
+   "menton": 0.4773608564363578
+  },
+  "tissue_depths_cm": {
+   "10": 0.21,
+   "151": -0.51,
+   "9": 0.4,
+   "168": -0.22,
+   "105": -0.26,
+   "54": -0.36,
+   "123": 0.31,
+   "172": 1.38,
+   "136": 1.03,
+   "150": 0.81,
+   "152": 0.93,
+   "0": 0.37,
+   "17": 0.15
+  },
+  "landmarks": {
+   "eye_r": [
+    -3.1511454999999997,
+    2.624618,
+    2.965663
+   ],
+   "eye_l": [
+    3.1511454999999997,
+    2.624618,
+    2.965663
+   ],
+   "nasion": [
+    1.230379265626499e-17,
+    3.0978468709473557,
+    4.60950989794471
+   ],
+   "menton": [
+    -7.015252733493802e-18,
+    -8.848140011787864,
+    3.688548620451159
+   ]
+  }
+ },
+ "jaw": {
+  "hinge": [
+   -0.09739553294548609,
+   0.5414853886927451,
+   -3.70049552516997
+  ],
+  "axis": [
+   0.9999908593249622,
+   0.0019989108138281594,
+   0.0037796325326381625
+  ],
+  "maxOpenDeg": 28.0,
+  "maxProtrusion": 0.35
+ },
+ "eyes": {
+  "right": [
+   -3.3030832750308843,
+   2.266856962851891,
+   2.643571889854376
+  ],
+  "left": [
+   3.3255674665977124,
+   2.2689494592393404,
+   2.6321400323468254
+  ]
+ },
+ "headCentre": [
+  0.23951000732961605,
+  5.014672628061818,
+  -4.918950794077475
+ ],
+ "assets": {
+  "skull": {
+   "file": "skull.glb",
+   "triangles": 48206
+  },
+  "brain": {
+   "file": "brain.glb",
+   "triangles": 40995
+  },
+  "eyes": {
+   "file": "eyes.glb",
+   "triangles": 12991
+  },
+  "muscles": {
+   "file": "muscles.glb",
+   "triangles": 19328
+  },
+  "hand": {
+   "file": "hand_bones.glb",
+   "triangles": 9720
+  },
+  "body": {
+   "file": "body_skeleton.glb",
+   "triangles": 44347
+  }
+ },
+ "structures": {
+  "frontal_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "frontal_bone"
+   ],
+   "anchor": [
+    3.694473640970003,
+    8.722810129775967,
+    4.605529790534825
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "parietal_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "parietal_bone"
+   ],
+   "anchor": [
+    4.848993794920314,
+    12.4225637925818,
+    -12.067795443945217
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "occipital_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "occipital_bone"
+   ],
+   "anchor": [
+    2.723242278177242,
+    2.6815688940764786,
+    -15.338025837387153
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "temporal_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "temporal_bone"
+   ],
+   "anchor": [
+    -6.889713822059516,
+    -0.6092187940059591,
+    -6.737672725645591
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "sphenoid_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "sphenoid_bone"
+   ],
+   "anchor": [
+    2.5735924393270704,
+    -1.7256003264158024,
+    -0.39271190020223967
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "ethmoid_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "ethmoid_bone"
+   ],
+   "anchor": [
+    0.006222067183689072,
+    0.9654361671020549,
+    4.323877176136425
+   ],
+   "schematic": false,
+   "label": false
+  },
+  "zygomatic_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "zygomatic_bone"
+   ],
+   "anchor": [
+    5.060932018674081,
+    -1.682818532659458,
+    2.489660177815736
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "maxilla": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "maxilla"
+   ],
+   "anchor": [
+    -1.0256751081307784,
+    -3.819554598736144,
+    5.4942616169733025
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "nasal_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "nasal_bone"
+   ],
+   "anchor": [
+    -0.44101263487708664,
+    1.288812954173061,
+    6.965559737528771
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "lacrimal_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "lacrimal_bone"
+   ],
+   "anchor": [
+    1.3102062394129959,
+    0.3560949089484503,
+    3.854257201853737
+   ],
+   "schematic": false,
+   "label": false
+  },
+  "palatine_bone": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "palatine_bone"
+   ],
+   "anchor": [
+    0.08500282913938931,
+    -2.4903231222658673,
+    2.185436470838532
+   ],
+   "schematic": false,
+   "label": false
+  },
+  "vomer": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "vomer"
+   ],
+   "anchor": [
+    0.015547887857252456,
+    -2.441568120355414,
+    4.080838984265652
+   ],
+   "schematic": false,
+   "label": false
+  },
+  "inferior_nasal_concha": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "inferior_nasal_concha"
+   ],
+   "anchor": [
+    1.1701337671498933,
+    -1.565596273628878,
+    4.56774516673153
+   ],
+   "schematic": false,
+   "label": false
+  },
+  "upper_teeth": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "upper_teeth"
+   ],
+   "anchor": [
+    0.7406826411473366,
+    -5.089485253957571,
+    5.882950938160724
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "mandible": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "mandible"
+   ],
+   "anchor": [
+    0.6380157895550331,
+    -8.540003071765987,
+    4.204138586983713
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "lower_teeth": {
+   "asset": "skull",
+   "layer": "skull",
+   "nodes": [
+    "lower_teeth"
+   ],
+   "anchor": [
+    1.3435079672018695,
+    -7.8594174664801875,
+    3.551944586179752
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "left_cerebral_hemisphere": {
+   "asset": "brain",
+   "layer": "brain",
+   "nodes": [
+    "left_cerebral_hemisphere"
+   ],
+   "anchor": [
+    2.234497558332292,
+    11.579311060292484,
+    2.4450163777151896
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "right_cerebral_hemisphere": {
+   "asset": "brain",
+   "layer": "brain",
+   "nodes": [
+    "right_cerebral_hemisphere"
+   ],
+   "anchor": [
+    -3.1788221262772516,
+    11.33759949414969,
+    2.2137889314591224
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "cerebellum": {
+   "asset": "brain",
+   "layer": "brain",
+   "nodes": [
+    "cerebellum"
+   ],
+   "anchor": [
+    2.1464280924862136,
+    0.17604150911293082,
+    -12.471980724273251
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "brainstem": {
+   "asset": "brain",
+   "layer": "brain",
+   "nodes": [
+    "brainstem"
+   ],
+   "anchor": [
+    0.24861919493343398,
+    -3.650284301637437,
+    -8.580349604469161
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "ventricular_system": {
+   "asset": "brain",
+   "layer": "brain",
+   "nodes": [
+    "ventricular_system"
+   ],
+   "anchor": [
+    1.9838017213151558,
+    5.416592127352856,
+    -12.125126047343937
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "eyeball": {
+   "asset": "eyes",
+   "layer": "eyes",
+   "nodes": [
+    "eyeball__right",
+    "eyeball__left"
+   ],
+   "anchor": [
+    -4.120359017002743,
+    1.7351058443301204,
+    3.800099674044572
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "cornea": {
+   "asset": "eyes",
+   "layer": "eyes",
+   "nodes": [
+    "cornea__right",
+    "cornea__left"
+   ],
+   "anchor": [
+    -3.89137562224943,
+    1.955927672024282,
+    4.0538382182854535
+   ],
+   "schematic": false,
+   "label": false
+  },
+  "iris": {
+   "asset": "eyes",
+   "layer": "eyes",
+   "nodes": [
+    "iris__right",
+    "iris__left"
+   ],
+   "anchor": [
+    -4.068692207931148,
+    1.9208478641944522,
+    3.6922020304335383
+   ],
+   "schematic": false,
+   "label": false
+  },
+  "lens": {
+   "asset": "eyes",
+   "layer": "eyes",
+   "nodes": [
+    "lens__right",
+    "lens__left"
+   ],
+   "anchor": [
+    -3.834846127872711,
+    1.9793729634058472,
+    3.5859253040095336
+   ],
+   "schematic": false,
+   "label": false
+  },
+  "optic_nerve": {
+   "asset": "eyes",
+   "layer": "eyes",
+   "nodes": [
+    "optic_nerve"
+   ],
+   "anchor": [
+    3.413787242474385,
+    2.6655443012288624,
+    2.63228892360167
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "extraocular_muscles": {
+   "asset": "eyes",
+   "layer": "eyes",
+   "nodes": [
+    "extraocular_muscles"
+   ],
+   "anchor": [
+    -4.6455822857378894,
+    2.7995189025233596,
+    3.6258199615212985
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "tongue_muscles": {
+   "asset": "muscles",
+   "layer": "muscles",
+   "nodes": [
+    "tongue_muscles"
+   ],
+   "anchor": [
+    -0.21163205310452676,
+    -6.801222664623647,
+    3.5605818109895453
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "frontalis": {
+   "asset": "muscles",
+   "layer": "muscles",
+   "nodes": [
+    "frontalis__right",
+    "frontalis__left"
+   ],
+   "anchor": [
+    -1.572176328125,
+    6.609163953125,
+    4.85229428125
+   ],
+   "schematic": true,
+   "label": true
+  },
+  "orbicularis_oculi": {
+   "asset": "muscles",
+   "layer": "muscles",
+   "nodes": [
+    "orbicularis_oculi__right",
+    "orbicularis_oculi__left"
+   ],
+   "anchor": [
+    -0.7566779939632686,
+    2.076090039809772,
+    5.378417396829188
+   ],
+   "schematic": true,
+   "label": true
+  },
+  "zygomaticus_major": {
+   "asset": "muscles",
+   "layer": "muscles",
+   "nodes": [
+    "zygomaticus_major__right",
+    "zygomaticus_major__left"
+   ],
+   "anchor": [
+    -2.96527347265625,
+    -4.08292464453125,
+    4.2628237265625
+   ],
+   "schematic": true,
+   "label": true
+  },
+  "buccinator": {
+   "asset": "muscles",
+   "layer": "muscles",
+   "nodes": [
+    "buccinator__right",
+    "buccinator__left"
+   ],
+   "anchor": [
+    -3.646563215460453,
+    -4.258586357938539,
+    3.8131922825028575
+   ],
+   "schematic": true,
+   "label": true
+  },
+  "masseter": {
+   "asset": "muscles",
+   "layer": "muscles",
+   "nodes": [
+    "masseter__right",
+    "masseter__left"
+   ],
+   "anchor": [
+    -6.408454545410157,
+    -3.1959140800781247,
+    0.7239392290039062
+   ],
+   "schematic": true,
+   "label": true
+  },
+  "orbicularis_oris": {
+   "asset": "muscles",
+   "layer": "muscles",
+   "nodes": [
+    "orbicularis_oris__midline"
+   ],
+   "anchor": [
+    0.0,
+    -3.0621196533262065,
+    5.926493125886319
+   ],
+   "schematic": true,
+   "label": true
+  },
+  "temporalis": {
+   "asset": "muscles",
+   "layer": "muscles",
+   "nodes": [
+    "temporalis__right",
+    "temporalis__left"
+   ],
+   "anchor": [
+    -5.735765036260762,
+    3.1545279771339607,
+    -0.3236795913391075
+   ],
+   "schematic": true,
+   "label": true
+  },
+  "carpal_bones": {
+   "asset": "hand",
+   "layer": "hands",
+   "nodes": [
+    "carpals"
+   ],
+   "anchor": [
+    0,
+    0,
+    0
+   ],
+   "schematic": false,
+   "label": true
+  },
+  "metacarpal_bones": {
+   "asset": "hand",
+   "layer": "hands",
+   "anchor": [
+    0,
+    0,
+    0
+   ],
+   "schematic": false,
+   "label": true,
+   "nodes": [
+    "metacarpal_1",
+    "metacarpal_2",
+    "metacarpal_3",
+    "metacarpal_4",
+    "metacarpal_5"
+   ]
+  },
+  "phalanges": {
+   "asset": "hand",
+   "layer": "hands",
+   "anchor": [
+    0,
+    0,
+    0
+   ],
+   "schematic": false,
+   "label": true,
+   "nodes": [
+    "proximal_phalanx_1",
+    "distal_phalanx_1",
+    "proximal_phalanx_2",
+    "middle_phalanx_2",
+    "distal_phalanx_2",
+    "proximal_phalanx_3",
+    "middle_phalanx_3",
+    "distal_phalanx_3",
+    "proximal_phalanx_4",
+    "middle_phalanx_4",
+    "distal_phalanx_4",
+    "proximal_phalanx_5",
+    "middle_phalanx_5",
+    "distal_phalanx_5"
+   ]
+  },
+  "rib_cage": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "rib_cage"
+   ],
+   "anchor": [
+    -0.10697108176850852,
+    37.362764326984646,
+    0.7712484751233298
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "torso"
+  },
+  "sternum": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "sternum"
+   ],
+   "anchor": [
+    -0.03341825371257843,
+    42.058120193747705,
+    10.402397683772271
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "torso"
+  },
+  "vertebral_column": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "vertebral_column"
+   ],
+   "anchor": [
+    -0.06679022385331694,
+    33.2430640831952,
+    -2.794305399252766
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "torso"
+  },
+  "clavicle": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "clavicle"
+   ],
+   "anchor": [
+    0.3606456565008295,
+    51.168923140252495,
+    2.381453194899667
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "torso"
+  },
+  "scapula": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "scapula"
+   ],
+   "anchor": [
+    0.7330938619740649,
+    47.71703863091293,
+    -3.324745961116022
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "torso"
+  },
+  "pelvis": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "pelvis"
+   ],
+   "anchor": [
+    0.08975904591206754,
+    2.263656038728948,
+    -0.6365814900706078
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "torso"
+  },
+  "humerus": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "humerus__left",
+    "humerus__right"
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "segment",
+   "anchor": [
+    0.0,
+    14.831284323419636,
+    0.0
+   ]
+  },
+  "forearm": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "forearm__left",
+    "forearm__right"
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "segment",
+   "anchor": [
+    0.0,
+    11.853703198820943,
+    0.0
+   ]
+  },
+  "femur": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "femur__left",
+    "femur__right"
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "segment",
+   "anchor": [
+    0.0,
+    22.34350767421168,
+    0.0
+   ]
+  },
+  "leg": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "leg__left",
+    "leg__right"
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "segment",
+   "anchor": [
+    0.0,
+    19.80624932241245,
+    0.0
+   ]
+  },
+  "foot": {
+   "asset": "body",
+   "layer": "body",
+   "nodes": [
+    "foot__left",
+    "foot__right"
+   ],
+   "schematic": false,
+   "label": true,
+   "frame": "segment",
+   "anchor": [
+    0.0,
+    9.316572983210229,
+    0.0
+   ]
+  }
+ },
+ "hand": {
+  "wristToMcp3": 8.274024881576938,
+  "palmWidth": 5.621365322480527,
+  "bones": [
+   {
+    "name": "metacarpal_1",
+    "length": 4.485887560972527,
+    "landmarks": [
+     1,
+     2
+    ],
+    "parent": null,
+    "restXPalm": [
+     0.017560496658101055,
+     0.41183221548005045,
+     -0.9110904758858552
+    ],
+    "basePalm": [
+     2.2449291670806995,
+     1.5885268542217448,
+     0.8830695071067747
+    ]
+   },
+   {
+    "name": "proximal_phalanx_1",
+    "length": 2.969418283904193,
+    "landmarks": [
+     2,
+     3
+    ],
+    "parent": "metacarpal_1",
+    "restXPalm": [
+     0.07643102270436483,
+     0.12736193981760469,
+     -0.9889070912144688
+    ],
+    "basePalm": [
+     4.2617578374671075,
+     5.2800852179130855,
+     2.53084412980766
+    ]
+   },
+   {
+    "name": "distal_phalanx_1",
+    "length": 2.390366951076238,
+    "landmarks": [
+     3,
+     4
+    ],
+    "parent": "proximal_phalanx_1",
+    "restXPalm": [
+     0.07142912794828318,
+     0.15337121597588685,
+     -0.9855836594580012
+    ],
+    "basePalm": [
+     4.552690420401682,
+     7.990349470393683,
+     3.3385973585096296
+    ]
+   },
+   {
+    "name": "metacarpal_2",
+    "length": 6.701556010739575,
+    "landmarks": [
+     -1,
+     5
+    ],
+    "parent": null,
+    "restXPalm": [
+     0.9965684888118879,
+     -0.0827722604934176,
+     -5.551115123125783e-17
+    ],
+    "basePalm": [
+     1.381996878216329,
+     2.1112860944045164,
+     0.2130639584604444
+    ]
+   },
+   {
+    "name": "proximal_phalanx_2",
+    "length": 3.8136584763165544,
+    "landmarks": [
+     5,
+     6
+    ],
+    "parent": "metacarpal_2",
+    "restXPalm": [
+     0.9917938758755226,
+     -0.12784720480248365,
+     0.0
+    ],
+    "basePalm": [
+     2.1171857886169976,
+     8.889267074150498,
+     0.275925943227189
+    ]
+   },
+   {
+    "name": "middle_phalanx_2",
+    "length": 2.3929310895068396,
+    "landmarks": [
+     6,
+     7
+    ],
+    "parent": "proximal_phalanx_2",
+    "restXPalm": [
+     0.9953893847604193,
+     -0.09591648818776828,
+     5.551115123125783e-17
+    ],
+    "basePalm": [
+     2.648130938605277,
+     12.539888580239595,
+     1.1357701712482018
+    ]
+   },
+   {
+    "name": "distal_phalanx_2",
+    "length": 1.8337800913539735,
+    "landmarks": [
+     7,
+     8
+    ],
+    "parent": "middle_phalanx_2",
+    "restXPalm": [
+     0.9941237084635112,
+     0.10824995275174847,
+     1.3877787807814457e-17
+    ],
+    "basePalm": [
+     2.7714097829355495,
+     14.40810180530729,
+     2.5453467413641846
+    ]
+   },
+   {
+    "name": "metacarpal_3",
+    "length": 6.479216782272352,
+    "landmarks": [
+     -1,
+     9
+    ],
+    "parent": null,
+    "restXPalm": [
+     0.9920113573182772,
+     0.1261485907632333,
+     0.0
+    ],
+    "basePalm": [
+     0.8132090914497261,
+     1.8790849959089737,
+     -0.6509108571503508
+    ]
+   },
+   {
+    "name": "proximal_phalanx_3",
+    "length": 4.281192948644454,
+    "landmarks": [
+     9,
+     10
+    ],
+    "parent": "metacarpal_3",
+    "restXPalm": [
+     0.9967578872702068,
+     0.08045939450824707,
+     2.7755575615628914e-17
+    ],
+    "basePalm": [
+     0.1622328279448919,
+     8.433959714558359,
+     0.1476037172844995
+    ]
+   },
+   {
+    "name": "middle_phalanx_3",
+    "length": 2.922146011611985,
+    "landmarks": [
+     10,
+     11
+    ],
+    "parent": "proximal_phalanx_3",
+    "restXPalm": [
+     0.9976659273648105,
+     0.06828394668816748,
+     1.3877787807814457e-17
+    ],
+    "basePalm": [
+     -0.2533931598529915,
+     12.584284602092882,
+     1.1789253037301948
+    ]
+   },
+   {
+    "name": "distal_phalanx_3",
+    "length": 1.7663149882555957,
+    "landmarks": [
+     11,
+     12
+    ],
+    "parent": "middle_phalanx_3",
+    "restXPalm": [
+     0.990051408178408,
+     0.14070610919200077,
+     0.0
+    ],
+    "basePalm": [
+     -0.41736016882487337,
+     14.982940742527667,
+     2.8366709069210683
+    ]
+   },
+   {
+    "name": "metacarpal_4",
+    "length": 5.7964455393594045,
+    "landmarks": [
+     -1,
+     13
+    ],
+    "parent": null,
+    "restXPalm": [
+     0.975556263970774,
+     0.21974980279259804,
+     1.3877787807814457e-17
+    ],
+    "basePalm": [
+     -0.4054287176504341,
+     1.912886660954805,
+     -0.3617403387562445
+    ]
+   },
+   {
+    "name": "proximal_phalanx_4",
+    "length": 3.9939078126920955,
+    "landmarks": [
+     13,
+     14
+    ],
+    "parent": "metacarpal_4",
+    "restXPalm": [
+     0.9900865302694672,
+     0.1404587575730584,
+     -1.3877787807814457e-17
+    ],
+    "basePalm": [
+     -1.7369104301863167,
+     7.6316751564815615,
+     0.28785904279660346
+    ]
+   },
+   {
+    "name": "middle_phalanx_4",
+    "length": 2.816635033337319,
+    "landmarks": [
+     14,
+     15
+    ],
+    "parent": "proximal_phalanx_4",
+    "restXPalm": [
+     0.9975208334193313,
+     0.07037177626295156,
+     2.7755575615628914e-17
+    ],
+    "basePalm": [
+     -2.524674006511986,
+     11.462233740165127,
+     1.300414429824261
+    ]
+   },
+   {
+    "name": "distal_phalanx_4",
+    "length": 1.5200740647744864,
+    "landmarks": [
+     15,
+     16
+    ],
+    "parent": "middle_phalanx_4",
+    "restXPalm": [
+     0.998474347146705,
+     0.05521755237205919,
+     2.7755575615628914e-17
+    ],
+    "basePalm": [
+     -2.964642158845442,
+     13.860063984882762,
+     2.670821734002655
+    ]
+   },
+   {
+    "name": "metacarpal_5",
+    "length": 5.38382707200154,
+    "landmarks": [
+     -1,
+     17
+    ],
+    "parent": null,
+    "restXPalm": [
+     0.9373922315025086,
+     0.3482754718879107,
+     -6.938893903907228e-18
+    ],
+    "basePalm": [
+     -1.3895549281198167,
+     1.6116626238454144,
+     0.14087754400687325
+    ]
+   },
+   {
+    "name": "proximal_phalanx_5",
+    "length": 3.2947236833434665,
+    "landmarks": [
+     17,
+     18
+    ],
+    "parent": "metacarpal_5",
+    "restXPalm": [
+     0.9598828045527069,
+     0.28040150057378405,
+     -1.3877787807814457e-17
+    ],
+    "basePalm": [
+     -3.3916239376402775,
+     6.680341859624731,
+     0.48632033935610974
+    ]
+   },
+   {
+    "name": "middle_phalanx_5",
+    "length": 2.1411697477830454,
+    "landmarks": [
+     18,
+     19
+    ],
+    "parent": "proximal_phalanx_5",
+    "restXPalm": [
+     0.8546185935566929,
+     0.5192562561464041,
+     -2.0383000842727483e-17
+    ],
+    "basePalm": [
+     -4.384840460244987,
+     9.788159856344329,
+     1.0772007509462025
+    ]
+   },
+   {
+    "name": "distal_phalanx_5",
+    "length": 1.5297546824373087,
+    "landmarks": [
+     19,
+     20
+    ],
+    "parent": "middle_phalanx_5",
+    "restXPalm": [
+     0.9176203964127513,
+     0.39745793247500494,
+     -2.7755575615628914e-17
+    ],
+    "basePalm": [
+     -5.050219248130411,
+     11.662985875715368,
+     1.7804657089952274
+    ]
+   }
+  ]
+ },
+ "body": {
+  "shoulderWidth": 32.91637008027756,
+  "torsoLength": 50.655487423242434,
+  "torsoNodes": [
+   "rib_cage",
+   "sternum",
+   "vertebral_column",
+   "clavicle",
+   "scapula",
+   "pelvis"
+  ],
+  "segments": [
+   {
+    "name": "humerus__left",
+    "length": 29.662568646839272,
+    "landmarks": [
+     11,
+     13
+    ],
+    "parent": null,
+    "restX": [
+     -0.985572789262989,
+     -0.1692331105154052,
+     -0.002536014521377873
+    ],
+    "restZ": [
+     0.0022862672075417445,
+     -0.028293962810440082,
+     0.9995970311334149
+    ]
+   },
+   {
+    "name": "forearm__left",
+    "length": 23.707406397641886,
+    "landmarks": [
+     13,
+     15
+    ],
+    "parent": "humerus__left",
+    "restX": [
+     0.9999995178119596,
+     0.0009816522752278398,
+     2.7104598672438026e-05
+    ],
+    "restZ": [
+     0.00018607992097007754,
+     -0.21651403487157383,
+     0.9762794876867454
+    ]
+   },
+   {
+    "name": "femur__left",
+    "length": 44.68701534842336,
+    "landmarks": [
+     23,
+     25
+    ],
+    "parent": null,
+    "restX": [
+     -0.999323780184712,
+     0.0366945241793131,
+     -0.0023439822078964744
+    ],
+    "restZ": [
+     -0.002373446593412269,
+     -0.0007594237169331261,
+     0.9999968950086227
+    ]
+   },
+   {
+    "name": "leg__left",
+    "length": 39.6124986448249,
+    "landmarks": [
+     25,
+     27
+    ],
+    "parent": "femur__left",
+    "restX": [
+     0.9953137142259074,
+     0.09669854827910976,
+     -3.216429623671837e-05
+    ],
+    "restZ": [
+     -0.0047427184454751714,
+     0.04914880169895951,
+     0.9987802070091814
+    ]
+   },
+   {
+    "name": "foot__left",
+    "length": 18.633145966420457,
+    "landmarks": [
+     27,
+     31
+    ],
+    "parent": "leg__left",
+    "restX": [
+     0.9902557612018564,
+     -0.06547785790195639,
+     0.12290719072171244
+    ],
+    "restZ": [
+     -0.09152007171403256,
+     -0.9712039840628224,
+     0.21997022028892815
+    ]
+   },
+   {
+    "name": "humerus__right",
+    "length": 29.659142558519775,
+    "landmarks": [
+     12,
+     14
+    ],
+    "parent": null,
+    "restX": [
+     -0.9854516216414858,
+     0.16994237973075751,
+     -0.0021654042606976784
+    ],
+    "restZ": [
+     -0.007293479858362716,
+     -0.029556906217567503,
+     0.999536489802349
+    ]
+   },
+   {
+    "name": "forearm__right",
+    "length": 23.916700966885468,
+    "landmarks": [
+     14,
+     16
+    ],
+    "parent": "humerus__right",
+    "restX": [
+     0.9989961869527664,
+     -0.044776602830406464,
+     -0.0012939446669002442
+    ],
+    "restZ": [
+     -0.008695819723159325,
+     -0.22218395666120866,
+     0.9749659851101024
+    ]
+   },
+   {
+    "name": "femur__right",
+    "length": 44.69952765505867,
+    "landmarks": [
+     24,
+     26
+    ],
+    "parent": null,
+    "restX": [
+     -0.9989462560854195,
+     -0.0458307436551441,
+     -0.0024331849374407554
+    ],
+    "restZ": [
+     -0.0021776967334490994,
+     -0.005623707409797987,
+     0.9999818156106169
+    ]
+   },
+   {
+    "name": "leg__right",
+    "length": 39.59551060866169,
+    "landmarks": [
+     26,
+     28
+    ],
+    "parent": "femur__right",
+    "restX": [
+     0.9932830192911939,
+     -0.11570897989196052,
+     -0.0005249382173080598
+    ],
+    "restZ": [
+     0.0056130439805491105,
+     0.04365185577208198,
+     0.9990310351660381
+    ]
+   },
+   {
+    "name": "foot__right",
+    "length": 18.602307852137287,
+    "landmarks": [
+     28,
+     32
+    ],
+    "parent": "leg__right",
+    "restX": [
+     0.9893371575850213,
+     0.07587152345128494,
+     -0.12432015343769479
+    ],
+    "restZ": [
+     0.10051723416664607,
+     -0.9734070102382139,
+     0.20585207809150147
+    ]
+   }
+  ]
+ }
+}

@@ -1,0 +1,16 @@
+import { chromium } from '@playwright/test';
+const [,, out, fixture, base = 'http://127.0.0.1:5173'] = process.argv;
+const browser = await chromium.launch({ channel: 'chrome', args: ['--use-fake-ui-for-media-stream', '--use-fake-device-for-media-stream', '--enable-unsafe-swiftshader', `--use-file-for-fake-video-capture=${fixture}`] });
+const page = await (await browser.newContext({ viewport: { width: 1440, height: 900 }, permissions: ['camera'] })).newPage();
+const errs = []; page.on('pageerror', (e) => errs.push(e.message));
+await page.goto(base + '/?e2e', { waitUntil: 'networkidle' });
+await page.getByRole('button', { name: 'Full Body', exact: true }).click();
+await page.getByRole('button', { name: 'Start camera' }).click();
+await page.waitForFunction(() => window.__xray.frameState.pose.present, null, { timeout: 120000 }).catch(() => errs.push('no pose'));
+await page.waitForFunction(() => window.__xray.useSession.getState().assets.body.state === 'ready', null, { timeout: 60000 }).catch(() => errs.push('no body asset'));
+await page.getByLabel('Show Labels').check();
+await page.waitForTimeout(4000);
+console.log(JSON.stringify(await page.evaluate(() => ({ live: window.__xray.useSession.getState().live, vis: Array.from(window.__xray.frameState.pose.visibility).filter((_, i) => [11,12,13,14,15,16,23,24,25,26,27,28].includes(i)).map(v => +v.toFixed(2)) }))));
+await page.screenshot({ path: out });
+console.log(errs.join('\n'));
+await browser.close();
